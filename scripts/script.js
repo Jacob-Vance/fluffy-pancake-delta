@@ -3,10 +3,11 @@ $(document).ready(function() {
   $("#goButton").click(function(){
                 
     let username = $("#username").val();
-    $("#userMsg").text("Greetings " + username +". You are super cool and fun.");
-//     let spiritaniaml = generatespiritanaimal(username); 
+    $("#userMsg").text("Hello " + username + ", the first letter of your name is " + username[0]);
+    // let spiritaniaml = generatespiritanaimal(username); 
 
   });
+
 
 });
 
@@ -17,7 +18,7 @@ $(document).ready(function() {
   
 // }
 
-// function namestart(name) {
-//   return "the first letter of your name is " + name[0]
+// function namestart(username) {
+//   return "the first letter of your name is " + username[0]
 
 // }
