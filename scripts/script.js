@@ -1,16 +1,18 @@
 $(function() {
   console.log("document is ready!");
 
-  var username, firstletter, msg1, msg2, spiritanimal = ""; 
+   var username, firstletter, backwardsname, msg1, msg2, msg3, spiritanimal = ""; 
 
-  $('#namebutton').click(function() {
+  $('#nameButton').click(function() {
       username = $('#username').val();
 
       firstletter = getirstletter(username);
+      backwardsname = username.split('').reverse().join('');
       spiritanimal = getspiritaniaml(username);
       msg1 = "The first letter of your name is ";
-      msg2 = ", which means your spirit animal is a(n) ";
-      $('#nameoutput').text(msg1 + firstletter + msg2 + spiritanimal +"!"); 
+      msg2 = ", and your name backwards is "
+      msg3 = ", so that means your spirit animal is a(n) ";
+      $('#nameoutput').text(msg1 + firstletter + msg2 + backwardsname + msg3 + spiritanimal +"!"); 
 
       });
 
